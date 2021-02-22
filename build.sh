@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# Yang Rong Individual Service
-# All Rights Reserved @2021
-#
-# 构建脚本，处理构建脚本的调用、源代码和不交付内容的删除、交付内容的合并。
-#
-# @author: Yang Rong
-# @version 1.01
-# @email: samyang3125c@gmail.com
-# @create: 2021-02-21
-
 # variable define
 work_path=$(cd $(dirname $0); pwd)
 relative_source_src="/src"
@@ -40,3 +30,4 @@ do
     rm ${work_path}/$i -rf
 done
 echo "[INFO] success delete undeliverd files."
+
