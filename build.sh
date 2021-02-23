@@ -24,10 +24,10 @@ cp -r ${absolute_so_src}/* ${absolute_source_src}/
 echo "[INFO] succeed merge deliverd src dir."
 
 echo "[INFO] begin delete undeliverd files..."
-del_dir_or_file=".git .idea .gitignore venv tmp test tests README.md requirements.txt build.py build.sh build"
+del_dir_or_file=".git .idea .gitignore LICENSE venv test README.md requirements.txt build.py build.sh build"
 for i in ${del_dir_or_file}
 do
-    rm ${work_path}/$i -rf
+    rm -rf ${work_path}/$i
 done
 echo "[INFO] success delete undeliverd files."
 
