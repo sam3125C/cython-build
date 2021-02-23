@@ -17,9 +17,9 @@ cp "${source_src_path}/main.pyc" "${compiled_src_path}/main.pyc"
 echo "[INFO] succeed handle main.pyc."
 
 echo "[INFO] begin merge deliverd src dir..."
-find ${source_src_path} -type d -name "__pycache__" -exec rm -rf {} \;
-find ${source_src_path} -type f -name "*.py" -exec rm {} -f \;
-find ${source_src_path} -type f -name "*.c" -exec rm {} -f \;
+find /Users/yangrong/Documents/Projects/OpenSource/cython-build-test/src -type d -name "__pycache__" -exec rm -rf {} \;
+find /Users/yangrong/Documents/Projects/OpenSource/cython-build-test/src -type f -name "*.py" -exec rm -f {} \;
+find /Users/yangrong/Documents/Projects/OpenSource/cython-build-test/src -type f -name "*.c" -exec rm -f {} \;
 cp -r ${compiled_src_path}/* ${source_src_path}/
 echo "[INFO] succeed merge deliverd src dir."
 
